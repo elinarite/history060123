@@ -1,0 +1,12 @@
+   0 echo "#!/bin/bash
+   1 mkdir /tmp/elina
+   2 touch /tmp/elina/super.txt
+   3 date >> /tmp/elina/super.txt
+   4 echo it works! >> /tmp/elina/super.txt
+   5 cp /tmp/elina/super.txt /opt" > script.sh
+   6 chmod u+x script.sh 
+   7 ./script.sh 
+   8 mv script.sh /bin/script
+   9 cat /tmp/elina/super.txt 
+  10 ls /opt/
+  11 history > history060123.txt
